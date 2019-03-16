@@ -11,6 +11,17 @@ html, body {
   overflow-x: hidden;
 }
 
+#navBar {
+  padding-top: .4%;
+  padding-bottom: .4%;
+  min-height: 50px;
+  font-size: 1.7em;
+}
+
+nav-link {
+  font-size: 1.4em;
+}
+
 #aboutRow, #personalGallery {
   border: 1px solid black;
 }
@@ -32,13 +43,18 @@ html, body {
   margin-bottom: 2%;
 }
 #aboutJake {
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 1.7em;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 6%;
 }
 
 #aboutH1{
+  font-size: 3.5em;
   margin-left: 6%;
   margin-top: 6%;
   margin-bottom: 2%;
 }
+
+
