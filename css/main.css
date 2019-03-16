@@ -14,6 +14,9 @@ html, body {
 #aboutRow, #personalGallery {
   border: 1px solid black;
 }
+#projectsRow {
+  margin: 1%;
+}
 
 #bannerImg {
   width: 100%;
@@ -25,14 +28,17 @@ html, body {
   clear: both;
   height: auto;
   margin: auto;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 #aboutJake {
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 6%;
 }
 
 #aboutH1{
-  margin-left: 3%;
+  margin-left: 6%;
+  margin-top: 6%;
+  margin-bottom: 2%;
 }
