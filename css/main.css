@@ -15,17 +15,17 @@ html, body {
   padding-top: .4%;
   padding-bottom: .4%;
   min-height: 50px;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 nav-link {
   font-size: 1.4em;
 }
 
-#aboutRow, #personalGallery {
+#aboutRow {
   border: 1px solid black;
 }
-#projectsRow {
+#projectsGallery, #personalRow {
   margin: 1%;
 }
 
@@ -45,16 +45,23 @@ nav-link {
 #aboutJake {
   font-family: 'Hind Guntur', sans-serif;
   font-size: 1.7em;
+  line-height: 1.7;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 6%;
 }
 
-#aboutH1{
+#aboutH1, #projectsH1{
   font-size: 3.5em;
+  display: block;
+  width: 100%;
   margin-left: 6%;
-  margin-top: 6%;
+  margin-top: 5%;
   margin-bottom: 2%;
+}
+.imgLink {
+  width: 100%;
+  height: auto;
 }
 
 
