@@ -10,100 +10,166 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Jake Seever Portfolio Site</title>
 
-<!-- CSS (load bootstrap from a CDN) -->
-<link href="https://fonts.googleapis.com/css?family=Hind+Guntur:400,500" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-<link rel="stylesheet" href="css/main.css" type="text/css" />
+  <meta charset="UTF-8">
+  <title>Jake Seever Portfolio Site</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- JavaScript for Bootstrap functionality -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- CSS (load bootstrap from a CDN) -->
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind+Guntur:400,500,700|Yellowtail" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+  <!-- Link to the sites main JavaScript file. -->
+  <script type="text/javascript" src="scripts/site.js"></script>
+
 </head>
 
   <body>
 
-  <!-- Create a navigation bar using Bootstrap-->
-    <nav id="navBar" class="navbar-expand-sm bg-dark navbar-dark">
-      <ul class="navbar-nav">
-        <!-- Link to the Home page -->
-       <li class="nav-item active">
-         <a class="nav-link" href="index.html">Home</a>
-       </li>
-       <!-- Link to the About Page -->
-       <li class="nav-item">
-         <a class="nav-link"  href="#aboutH1">About me</a>
-       </li>
+   <a href="#maincontent" id="skip">Skip to main content</a> <!-- Not visible on the screen, for screen readers. -->
+
+    <!-- Create a navigation bar using Bootstrap-->
+    <nav id="navBar" class="fixed-top navbar-expand-xs bg-dark navbar-dark navbar-expand-lg">
+     <div class="container-fluid">
+
+       <!-- Button to toggle the navigation-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+
+     <div class="collapse navbar-collapse" id="navbarToggle">
+
+        <ul class="navbar-nav mr-auto">
+          <!-- Link to the Home page -->
+        <li class="nav-item active">
+           <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <!-- Link to the About Page -->
+        <li class="nav-item">
+          <a class="nav-link"  href="#aboutH1">About me</a>
+        </li>
         <!-- Link to the Contact us page-->
         <li class="nav-item">
-          <a class="nav-link" href="#projectsGallery">Projects</a>
+          <a class="nav-link" href="#projectsH1">Projects</a>
         </li>
+
       </ul>
+
+     </div> <!-- End of the collapse div. -->
+
+    </div> <!-- End of the container div. -->
+
    </nav>
 
-   <div class="row" id="bannerRow">
-     <img src="images/Beach-Banner.jpg" id="bannerImg" class="img-fluid" alt="Beach image">
-   </div>
-  <main>
-   <div class="row" id="aboutRow">
-    <h1 class="h1" id="aboutH1">About Me</h1>
-    <p id="aboutJake">&emsp; My name is Jake Seever and I am an aspiring web developer from central Wisconsin.
-      I have graduated from Northcentral Technical College with an Associate Degree in IT-Web Design.
-      I also work at NTC and really enjoy my job. I manage the Information Technology Entrepreneurial Center (iTEC) and its employees.
-      This is a place where IT students come to receive academic help and technical support. I am currently pursuing my Bachelor’s Degree
-      in Web Development through Bellevue University. I enjoy playing sports like baseball, softball, golf, basketball, and volleyball when
-      the opportunity presents itself. I also enjoy being outdoors and doing things like camping, fishing, having bonfires, and swimming when
-      I have time. I like the challenge of fixing things. I haven’t ever recalled a repair man in my entire life. I repair my vehicles, appliances,
-      electronics, plumbing, heating, and generally whatever stops working correctly. I am good at taking things apart and figuring out how the
-      work with just a bit of additional research. One day I hope to be able to work remotely so that I may travel more and see more of the world.
-    </p>
+   <div id="bannerRow">
 
-   </div>
+     <img src="images/Beach-Banner.jpg" id="bannerImg" class="img-fluid" alt="Beach image">
+
+     <div class="caption">
+
+       <h1 class="h1 centered" id="bannerH1">Jake Seever</h1>
+       <h2 class="h2 centered" id="bannerH2">Web Developer</h2>
+
+     </div> <!-- End of caption div. -->
+
+   </div> <!-- End of banner row. -->
+
+   <main id="mainContent">
+
+    <div class="row" id="aboutRow">
+
+     <h1 class="h1" id="aboutH1">About Me</h1>
+
+     <p id="aboutJake">&emsp; My name is Jake Seever and I am an aspiring web developer from central Wisconsin.
+       I have graduated from Northcentral Technical College with an Associate Degree in IT-Web Design.
+       I also work at NTC and really enjoy my job. I manage the Information Technology Entrepreneurial Center (iTEC) and its employees.
+       This is a place where IT students come to receive academic help and technical support. I am currently pursuing my Bachelor’s Degree
+       in Web Development through Bellevue University. I enjoy playing sports like baseball, softball, golf, basketball, and volleyball when
+       the opportunity presents itself. I also enjoy being outdoors and doing things like camping, fishing, having bonfires, and swimming when
+       I have time. I like the challenge of fixing things. I haven’t ever recalled a repair man in my entire life. I repair my vehicles, appliances,
+       electronics, plumbing, heating, and generally whatever stops working correctly. I am good at taking things apart and figuring out how the
+       work with just a bit of additional research. One day I hope to be able to work remotely so that I may travel more and see more of the world.
+     </p>
+
+    </div> <!-- End of aboutRow -->
 
    <div class="row" id="personalRow">
+
       <div class="col-sm-6 col-lg-4 imgDiv">
-        <img src="images/jSeever.png" class="img-fluid rounded"alt="Jake Seever">
+        <img src="images/jSeever.png" class="img-fluid rounded" alt="Jake Seever in his tuxedo">
       </div>
+
       <div class="col-sm-6 col-lg-4 imgDiv">
-          <img src="images/kids.JPG" class="img-fluid rounded" alt="Jake with his children">
-        </div>
+        <img src="images/kids.JPG" class="img-fluid rounded" alt="Jake with his children, Gavin and Athena">
+      </div>
+
       <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
         <img src="images/grandMaster.jpg" class="img-fluid rounded" alt="Jake and the Grand Master of Masons in Wisconsin">
       </div>
+
       <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
-        <img src="images/JakesCar.jpg" class="img-fluid rounded" alt="Jake's Car">
+        <img src="images/JakesCar.jpg" class="img-fluid rounded" alt="Jake's Car, a BMW 550i xDrive">
       </div>
+
       <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
-          <img src="images/Ceasar.JPG" class="img-fluid rounded" alt="Jake's dog">
-        </div>
+        <img src="images/Ceasar.JPG" class="img-fluid rounded" alt="Jake's dog Ceasar">
+      </div>
+
       <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
         <img src="images/Elvi.jpg" class="img-fluid rounded" alt="Jake with the Elvi">
       </div>
-   </div>
 
-  <div class="row" id="projectsGallery"><br>
-      <h1 class="h1" id="projectsH1">Projects</h1>
-      <div class="col-sm-6 col-lg-4 imgDiv">
-          <a href="https://jakeseever.github.io/bioSite/" class="imgLink" target="_blank"><img src="images/bioSite.png" class="img-fluid rounded"alt="Bio site image link"></a>
-        </div>
-        <div class="col-sm-6 col-lg-4 imgDiv">
-          <a href="https://github.com/jakeseever/bioSite/blob/master/SeeverAssignment3.3.pdf" class="imgLink" target="_blank" ><img src="images/bioSiteProto.PNG" class="img-fluid rounded" alt="Bio Site prototype link"></a>
-       </div>
-        <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
-          <a href="https://github.com/jakeseever/web-231" class="imgLink" target="_blank"><img src="images/web231Repo.PNG" class="img-fluid rounded" alt="Web 231 repository link image"></a>
-        </div>
-        <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
-         <a href="https://github.com/jakeseever/jakeseever.github.io/blob/master/seever-assignment-2.4.pdf" class="imgLink" target="_blank"><img src="images/portfolioProto.PNG" class="img-fluid rounded" alt="Portfolio Prototype link image"></a>
-        </div>
-        <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
-          <a href="https://github.com/jakeseever/web-330" class="imgLink" target="_blank"><img src="images/web330Repo.PNG" class="img-fluid rounded" alt="Web 330 repository link image."></a>
-        </div>
-        <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
-          <a href="https://jakeseever.github.io/MemoryMatch/index.html" class="imgLink" target="_blank"><img src="images/memoryMatch.PNG" class="img-fluid rounded" alt="Memory Match game link image"></a>
-        </div>
+   </div> <!-- End of personalRow-->
 
-     </div>
-    </main>
+   <div class="row" id="projectsGallery"><br>
 
-   </body>
+    <h1 class="h1" id="projectsH1">Projects</h1>
 
-  </html>
+    <div class="col-sm-6 col-lg-4 imgDiv">
+      <a href="https://jakeseever.github.io/bioSite/" class="imgLink" target="_blank"><img src="images/bioSite.png" class="img-fluid rounded"alt="Bio site image link">
+      <figcaption class="figure-caption">The Mike England BioSite</figcaption></a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 imgDiv">
+      <a href="https://github.com/jakeseever/bioSite/blob/master/SeeverAssignment3.3.pdf" class="imgLink" target="_blank" ><img src="images/bioSiteProto.PNG" class="img-fluid rounded" alt="Bio Site prototype link">
+      <figcaption class="figure-caption">The BioSite Prototype</figcaption></a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
+      <a href="https://github.com/jakeseever/web-231" class="imgLink" target="_blank"><img src="images/web231Repo.PNG" class="img-fluid rounded" alt="Web 231 repository link image">
+      <figcaption class="figure-caption">My Web-231 Repository</figcaption></a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
+      <a href="https://github.com/jakeseever/jakeseever.github.io/blob/master/seever-assignment-2.4.pdf" class="imgLink" target="_blank"><img src="images/portfolioProto.PNG" class="img-fluid rounded" alt="Portfolio Prototype link image">
+      <figcaption class="figure-caption">My Portfolio Prototype</figcaption></a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
+      <a href="https://github.com/jakeseever/web-330" class="imgLink" target="_blank"><img src="images/web330Repo.PNG" class="img-fluid rounded" alt="Web 330 repository link image.">
+      <figcaption class="figure-caption">My Web-330 Respository</figcaption></a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 img-fluid rounded imgDiv">
+      <a href="https://jakeseever.github.io/MemoryMatch/index.html" class="imgLink" target="_blank"><img src="images/memoryMatch.PNG" class="img-fluid rounded" alt="Memory Match game link image">
+      <figcaption class="figure-caption">A Memory Match Game</figcaption></a>
+    </div>
+
+   </div> <!-- End of projectsGallery -->
+
+  </main>
+
+  <footer class="footer">
+    <div id="footerContent"></div>
+  </footer>
+
+ </body>
+
+</html>
