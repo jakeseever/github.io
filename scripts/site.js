@@ -19,8 +19,8 @@ function displayFooterInfo() {
   // Variables to output
   let author = "Jake Seever";
   let project = "Portfolio Project"
-  var d = new Date();
-  var year = d.getFullYear();
+  var date = new Date();
+  var year = date.getFullYear();
 
   // output to the footer
   var footerContent = document.getElementById("footerContent");
