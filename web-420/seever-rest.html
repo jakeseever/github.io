@@ -1,0 +1,130 @@
+<!--
+============================================
+; Title:  seever-rest.html
+; Author: Jake Seever
+; Date:   04 May 2019
+; Description: Page for REST presentations
+;===========================================
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+
+  <meta charset="UTF-8">
+  <title>Jake Seever Portfolio Site</title>
+
+  <!-- Set the viewport width for responsiveness. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- JavaScript for Bootstrap functionality -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- CSS (load bootstrap from a CDN) -->
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind+Guntur:400,500,700|Yellowtail" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/main.css" type="text/css" />
+
+  <!-- Link to the sites main JavaScript file. -->
+  <script type="text/javascript" src="../scripts/site.js"></script>
+
+  <!-- Add a favicon. -->
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+
+ </head>
+
+  <body>
+
+   <a href="#maincontent" id="skip">Skip to main content</a> <!-- Not visible on the screen, for screen readers. -->
+
+    <!-- Create a navigation bar using Bootstrap-->
+    <nav id="navBar" class="fixed-top navbar-expand-xs bg-dark navbar-dark navbar-expand-lg">
+     <div class="container-fluid">
+
+       <!-- Button to toggle the navigation-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+
+     <div class="collapse navbar-collapse" id="navbarToggle">
+
+        <ul class="navbar-nav mr-auto">
+
+          <!-- Link to the Home page -->
+        <li class="nav-item">
+           <a class="nav-link" href="../index.html">Home</a>
+        </li>
+
+        <!-- Link to the About Page -->
+        <li class="nav-item">
+          <a class="nav-link"  href="../index.html#aboutH1">About me</a>
+        </li>
+
+        <!-- Link to the Projects us page-->
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html#projectsH1">Projects</a>
+        </li>
+
+        <!-- Link to the Projects us page-->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Presentations</a>
+        </li>
+
+        <!-- Link to the Projects us page-->
+        <li class="nav-item">
+          <a class="nav-link" href="../web-335/seever-diagrams.html">Diagrams</a>
+        </li>
+
+      </ul>
+
+     </div> <!-- End of the collapse div. -->
+
+    </div> <!-- End of the container div. -->
+
+   </nav>
+
+   <div id="bannerRow">
+
+     <img src="../images/Beach-Banner.jpg" id="bannerImg" class="img-fluid" alt="Beach image">
+
+     <div class="caption">
+
+       <h1 class="h1 centered" id="bannerH1">Jake Seever</h1>
+       <h2 class="h2 centered" id="bannerH2">Web Developer</h2>
+
+     </div> <!-- End of caption div. -->
+
+   </div> <!-- End of banner row. -->
+
+   <main id="mainContent">
+
+    <div class="row">
+
+     <h1 class="h1" id="presentationsH1">Presentations</h1>
+
+     <!-- Presentation content below. -->
+     <div class="card">
+
+      <div class="card-body" style="margin:auto;">
+
+        <video class="presentationVideo" controls autoplay reload="none">
+          <source src="../restful-api-presentations/seever-presentation1.3.mp4" type="video/mp4"/>
+        </video>
+
+      </div>
+
+     </div>
+
+  </main>
+
+  <footer class="footer">
+    <div id="footerContent"></div>
+  </footer>
+
+ </body>
+
+</html>
