@@ -77,7 +77,7 @@ main {
 #aboutRow {
   border: 1px solid black;
 }
-#projectsGallery, #personalRow {
+#projectsGallery, #personalRow, #diagramRow {
   padding: 2%;
   width: 100%;
 }
@@ -128,7 +128,7 @@ main {
   margin-bottom: 6%;
 }
 
-#aboutH1, #projectsH1{
+#aboutH1, #projectsH1, #diagramsH1, #presentationsH1{
   font-size: 3.5rem;
   display: block;
   width: 100%;
@@ -140,6 +140,11 @@ main {
 .figure-caption {
   margin-top: 2%;
   margin-left: 3%;
+}
+
+/* Video Styles */
+.presentationVideo {
+  margin-left: auto;
 }
 
 /* Footer Styles */
